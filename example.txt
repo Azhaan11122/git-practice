@@ -1,1 +1,7 @@
 Hello, Git!
+<<<<<<< HEAD
+=======
+New feature
+New feature
+New feature
+>>>>>>> new-feature
