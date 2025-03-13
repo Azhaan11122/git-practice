@@ -1,0 +1,883 @@
+Script started on 2025-03-13 07:14:58+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="133" LINES="33"]
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ [7mwget -O Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Mini[27m[7mf[27m[7morge3-$(uname)-$(uname -m).sh"[27m[A]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ wget -O Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+[?2004l--2025-03-13 07:15:12--  https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+Resolving github.com (github.com)... 20.207.73.82
+Connecting to github.com (github.com)|20.207.73.82|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-Linux-x86_64.sh [following]
+--2025-03-13 07:15:13--  https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-Linux-x86_64.sh
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/221584272/0702c0b7-4728-4bb5-b8e8-8b7f59a0bfbc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250313T071513Z&X-Amz-Expires=300&X-Amz-Signature=594f342c90722866eca0b24c24537355638953468e15ba08477a159927d6a6a7&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMiniforge3-Linux-x86_64.sh&response-content-type=application%2Foctet-stream [following]
+--2025-03-13 07:15:13--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/221584272/0702c0b7-4728-4bb5-b8e8-8b7f59a0bfbc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250313T071513Z&X-Amz-Expires=300&X-Amz-Signature=594f342c90722866eca0b24c24537355638953468e15ba08477a159927d6a6a7&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMiniforge3-Linux-x86_64.sh&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 90308175 (86M) [application/octet-stream]
+Saving to: ‘Miniforge3.sh’
+
+Miniforge3.sh                       0%[                                                           ]       0  --.-KB/s               Miniforge3.sh                       3%[=>                                                         ]   3.09M  15.4MB/s               Miniforge3.sh                       9%[====>                                                      ]   8.39M  20.4MB/s               Miniforge3.sh                      11%[=====>                                                     ]  10.02M  16.0MB/s               Miniforge3.sh                      15%[=======>                                                   ]  13.09M  15.8MB/s               Miniforge3.sh                      22%[============>                                              ]  19.32M  18.6MB/s               Miniforge3.sh                      24%[=============>                                             ]  20.68M  16.7MB/s               Miniforge3.sh                      30%[=================>                                         ]  26.50M  18.4MB/s               Miniforge3.sh                      34%[===================>                                       ]  30.02M  17.6MB/s               Miniforge3.sh                      42%[=======================>                                   ]  36.22M  19.0MB/s               Miniforge3.sh                      46%[==========================>                                ]  40.02M  18.3MB/s               Miniforge3.sh                      53%[==============================>                            ]  46.04M  19.3MB/s               Miniforge3.sh                      58%[=================================>                         ]  50.01M  18.8MB/s               Miniforge3.sh                      64%[=====================================>                     ]  55.84M  19.4MB/s               Miniforge3.sh                      69%[========================================>                  ]  60.02M  19.1MB/s    eta 1s     Miniforge3.sh                      77%[============================================>              ]  66.47M  19.8MB/s    eta 1s     Miniforge3.sh                      81%[==============================================>            ]  70.02M  19.4MB/s    eta 1s     Miniforge3.sh                      88%[===================================================>       ]  75.96M  19.8MB/s    eta 1s     Miniforge3.sh                      92%[=====================================================>     ]  80.01M  20.0MB/s    eta 1s     Miniforge3.sh                     100%[==========================================================>]  86.12M  21.1MB/s    in 4.3s    
+
+2025-03-13 07:15:18 (20.0 MB/s) - ‘Miniforge3.sh’ saved [90308175/90308175]
+
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ bash mi[K[KMiniforge3.sh -b -p "${HOME}/conda"
+[?2004lPREFIX=/home/mohiddinkhan/conda
+Unpacking payload ...
+Extracting _libgcc_mutex-0.1-conda_forge.tar.bz2
+Extracting ca-certificates-2025.1.31-hbcca054_0.conda
+Extracting ld_impl_linux-64-2.43-h712a8e2_4.conda
+Extracting libgomp-14.2.0-h767d61c_2.conda
+Extracting pybind11-abi-4-hd8ed1ab_3.tar.bz2
+Extracting python_abi-3.12-5_cp312.conda
+Extracting tzdata-2025a-h78e105d_0.conda
+Extracting _openmp_mutex-4.5-2_gnu.tar.bz2
+Extracting libgcc-14.2.0-h767d61c_2.conda
+Extracting c-ares-1.34.4-hb9d3cd8_0.conda
+Extracting libexpat-2.6.4-h5888daf_0.conda
+Extracting libffi-3.4.6-h2dba641_0.conda
+Extracting libgcc-ng-14.2.0-h69a702a_2.conda
+Extracting libiconv-1.18-h4ce23a2_1.conda
+Extracting liblzma-5.6.4-hb9d3cd8_0.conda
+Extracting libstdcxx-14.2.0-h8f9b012_2.conda
+Extracting libzlib-1.3.1-hb9d3cd8_2.conda
+Extracting ncurses-6.5-h2d0b736_3.conda
+Extracting openssl-3.4.1-h7b32b05_0.conda
+Extracting reproc-14.2.5.post0-hb9d3cd8_0.conda
+Extracting bzip2-1.0.8-h4bc722e_7.conda
+Extracting keyutils-1.6.1-h166bdaf_0.tar.bz2
+Extracting libedit-3.1.20250104-pl5321h7949ede_0.conda
+Extracting libev-4.33-hd590300_2.conda
+Extracting libnsl-2.0.1-hd590300_0.conda
+Extracting libsqlite-3.49.1-hee588c1_1.conda
+Extracting libssh2-1.11.1-hf672d98_0.conda
+Extracting libstdcxx-ng-14.2.0-h4852527_2.conda
+Extracting libuuid-2.38.1-h0b41bf4_0.conda
+Extracting libxcrypt-4.4.36-hd590300_1.conda
+Extracting lz4-c-1.10.0-h5888daf_1.conda
+Extracting lzo-2.10-hd590300_1001.conda
+Extracting readline-8.2-h8c095d6_2.conda
+Extracting reproc-cpp-14.2.5.post0-h5888daf_0.conda
+Extracting tk-8.6.13-noxft_h4845f30_101.conda
+Extracting fmt-11.0.2-h434a139_0.conda
+Extracting icu-75.1-he02047a_0.conda
+Extracting krb5-1.21.3-h659f571_0.conda
+Extracting libnghttp2-1.64.0-h161d5f1_0.conda
+Extracting libsolv-0.7.30-h3509ff9_0.conda
+Extracting python-3.12.9-h9e4cc4f_1_cpython.conda
+Extracting yaml-cpp-0.8.0-h59595ed_0.conda
+Extracting zstd-1.5.6-ha6fb4c9_0.conda
+Extracting libcurl-8.12.1-h332b0f4_0.conda
+Extracting libxml2-2.13.6-h8d12d68_0.conda
+Extracting menuinst-2.2.0-py312h7900ff3_0.conda
+Extracting archspec-0.2.5-pyhd8ed1ab_0.conda
+Extracting boltons-24.0.0-pyhd8ed1ab_1.conda
+Extracting brotli-python-1.1.0-py312h2ec8cdc_2.conda
+Extracting certifi-2025.1.31-pyhd8ed1ab_0.conda
+Extracting charset-normalizer-3.4.1-pyhd8ed1ab_0.conda
+Extracting colorama-0.4.6-pyhd8ed1ab_1.conda
+Extracting distro-1.9.0-pyhd8ed1ab_1.conda
+Extracting frozendict-2.4.6-py312h66e93f0_0.conda
+Extracting hpack-4.1.0-pyhd8ed1ab_0.conda
+Extracting hyperframe-6.1.0-pyhd8ed1ab_0.conda
+Extracting idna-3.10-pyhd8ed1ab_1.conda
+Extracting jsonpointer-3.0.0-py312h7900ff3_1.conda
+Extracting libarchive-3.7.7-h4585015_3.conda
+Extracting packaging-24.2-pyhd8ed1ab_2.conda
+Extracting platformdirs-4.3.6-pyhd8ed1ab_1.conda
+Extracting pluggy-1.5.0-pyhd8ed1ab_1.conda
+Extracting pycosat-0.6.6-py312h66e93f0_2.conda
+Extracting pycparser-2.22-pyh29332c3_1.conda
+Extracting pysocks-1.7.1-pyha55dd90_7.conda
+Extracting ruamel.yaml.clib-0.2.8-py312h66e93f0_1.conda
+Extracting setuptools-75.8.2-pyhff2d567_0.conda
+Extracting truststore-0.10.1-pyh29332c3_0.conda
+Extracting wheel-0.45.1-pyhd8ed1ab_1.conda
+Extracting cffi-1.17.1-py312h06ac9bb_0.conda
+Extracting h2-4.2.0-pyhd8ed1ab_0.conda
+Extracting jsonpatch-1.33-pyhd8ed1ab_1.conda
+Extracting libmamba-1.5.12-h49b8a8d_0.conda
+Extracting pip-25.0.1-pyh8b19718_0.conda
+Extracting ruamel.yaml-0.18.10-py312h66e93f0_0.conda
+Extracting tqdm-4.67.1-pyhd8ed1ab_1.conda
+Extracting libmambapy-1.5.12-py312hbaee817_0.conda
+Extracting zstandard-0.23.0-py312hef9b889_1.conda
+Extracting conda-package-streaming-0.11.0-pyhd8ed1ab_1.conda
+Extracting urllib3-2.3.0-pyhd8ed1ab_0.conda
+Extracting requests-2.32.3-pyhd8ed1ab_1.conda
+Extracting conda-package-handling-2.4.0-pyh7900ff3_2.conda
+Extracting conda-24.11.3-py312h7900ff3_0.conda
+Extracting conda-libmamba-solver-24.9.0-pyhd8ed1ab_0.conda
+Extracting mamba-1.5.12-py312h9460a1c_0.conda
+
+Installing base environment...
+
+Transaction
+
+  Prefix: /home/mohiddinkhan/conda
+
+  Updating specs:
+
+   - conda-forge/linux-64::_libgcc_mutex==0.1=conda_forge[md5=d7c89558ba9fa0495403155b64376d81]
+   - conda-forge/linux-64::ca-certificates==2025.1.31=hbcca054_0[md5=19f3a56f68d2fd06c516076bff482c52]
+   - conda-forge/linux-64::ld_impl_linux-64==2.43=h712a8e2_4[md5=01f8d123c96816249efd255a31ad7712]
+   - conda-forge/linux-64::libgomp==14.2.0=h767d61c_2[md5=06d02030237f4d5b3d9a7e7d348fe3c6]
+   - conda-forge/noarch::pybind11-abi==4=hd8ed1ab_3[md5=878f923dd6acc8aeb47a75da6c4098be]
+   - conda-forge/linux-64::python_abi==3.12=5_cp312[md5=0424ae29b104430108f5218a66db7260]
+   - conda-forge/noarch::tzdata==2025a=h78e105d_0[md5=dbcace4706afdfb7eb891f7b37d07c04]
+   - conda-forge/linux-64::_openmp_mutex==4.5=2_gnu[md5=73aaf86a425cc6e73fcf236a5a46396d]
+   - conda-forge/linux-64::libgcc==14.2.0=h767d61c_2[md5=ef504d1acbd74b7cc6849ef8af47dd03]
+   - conda-forge/linux-64::c-ares==1.34.4=hb9d3cd8_0[md5=e2775acf57efd5af15b8e3d1d74d72d3]
+   - conda-forge/linux-64::libexpat==2.6.4=h5888daf_0[md5=db833e03127376d461e1e13e76f09b6c]
+   - conda-forge/linux-64::libffi==3.4.6=h2dba641_0[md5=e3eb7806380bc8bcecba6d749ad5f026]
+   - conda-forge/linux-64::libgcc-ng==14.2.0=h69a702a_2[md5=a2222a6ada71fb478682efe483ce0f92]
+   - conda-forge/linux-64::libiconv==1.18=h4ce23a2_1[md5=e796ff8ddc598affdf7c173d6145f087]
+   - conda-forge/linux-64::liblzma==5.6.4=hb9d3cd8_0[md5=42d5b6a0f30d3c10cd88cb8584fda1cb]
+   - conda-forge/linux-64::libstdcxx==14.2.0=h8f9b012_2[md5=a78c856b6dc6bf4ea8daeb9beaaa3fb0]
+   - conda-forge/linux-64::libzlib==1.3.1=hb9d3cd8_2[md5=edb0dca6bc32e4f4789199455a1dbeb8]
+   - conda-forge/linux-64::ncurses==6.5=h2d0b736_3[md5=47e340acb35de30501a76c7c799c41d7]
+   - conda-forge/linux-64::openssl==3.4.1=h7b32b05_0[md5=41adf927e746dc75ecf0ef841c454e48]
+   - conda-forge/linux-64::reproc==14.2.5.post0=hb9d3cd8_0[md5=69fbc0a9e42eb5fe6733d2d60d818822]
+   - conda-forge/linux-64::bzip2==1.0.8=h4bc722e_7[md5=62ee74e96c5ebb0af99386de58cf9553]
+   - conda-forge/linux-64::keyutils==1.6.1=h166bdaf_0[md5=30186d27e2c9fa62b45fb1476b7200e3]
+   - conda-forge/linux-64::libedit==3.1.20250104=pl5321h7949ede_0[md5=c277e0a4d549b03ac1e9d6cbbe3d017b]
+   - conda-forge/linux-64::libev==4.33=hd590300_2[md5=172bf1cd1ff8629f2b1179945ed45055]
+   - conda-forge/linux-64::libnsl==2.0.1=hd590300_0[md5=30fd6e37fe21f86f4bd26d6ee73eeec7]
+   - conda-forge/linux-64::libsqlite==3.49.1=hee588c1_1[md5=73cea06049cc4174578b432320a003b8]
+   - conda-forge/linux-64::libssh2==1.11.1=hf672d98_0[md5=be2de152d8073ef1c01b7728475f2fe7]
+   - conda-forge/linux-64::libstdcxx-ng==14.2.0=h4852527_2[md5=c75da67f045c2627f59e6fcb5f4e3a9b]
+   - conda-forge/linux-64::libuuid==2.38.1=h0b41bf4_0[md5=40b61aab5c7ba9ff276c41cfffe6b80b]
+   - conda-forge/linux-64::libxcrypt==4.4.36=hd590300_1[md5=5aa797f8787fe7a17d1b0821485b5adc]
+   - conda-forge/linux-64::lz4-c==1.10.0=h5888daf_1[md5=9de5350a85c4a20c685259b889aa6393]
+   - conda-forge/linux-64::lzo==2.10=hd590300_1001[md5=ec7398d21e2651e0dcb0044d03b9a339]
+   - conda-forge/linux-64::readline==8.2=h8c095d6_2[md5=283b96675859b20a825f8fa30f311446]
+   - conda-forge/linux-64::reproc-cpp==14.2.5.post0=h5888daf_0[md5=828302fca535f9cfeb598d5f7c204323]
+   - conda-forge/linux-64::tk==8.6.13=noxft_h4845f30_101[md5=d453b98d9c83e71da0741bb0ff4d76bc]
+   - conda-forge/linux-64::fmt==11.0.2=h434a139_0[md5=995f7e13598497691c1dc476d889bc04]
+   - conda-forge/linux-64::icu==75.1=he02047a_0[md5=8b189310083baabfb622af68fd9d3ae3]
+   - conda-forge/linux-64::krb5==1.21.3=h659f571_0[md5=3f43953b7d3fb3aaa1d0d0723d91e368]
+   - conda-forge/linux-64::libnghttp2==1.64.0=h161d5f1_0[md5=19e57602824042dfd0446292ef90488b]
+   - conda-forge/linux-64::libsolv==0.7.30=h3509ff9_0[md5=02539b77d25aa4f65b20246549e256c3]
+   - conda-forge/linux-64::python==3.12.9=h9e4cc4f_1_cpython[md5=d82342192dfc9145185190e651065aa9]
+   - conda-forge/linux-64::yaml-cpp==0.8.0=h59595ed_0[md5=965eaacd7c18eb8361fd12bb9e7a57d7]
+   - conda-forge/linux-64::zstd==1.5.6=ha6fb4c9_0[md5=4d056880988120e29d75bfff282e0f45]
+   - conda-forge/linux-64::libcurl==8.12.1=h332b0f4_0[md5=45e9dc4e7b25e2841deb392be085500e]
+   - conda-forge/linux-64::libxml2==2.13.6=h8d12d68_0[md5=328382c0e0ca648e5c189d5ec336c604]
+   - conda-forge/linux-64::menuinst==2.2.0=py312h7900ff3_0[md5=f22f8e77b36e67297feffe03eefd5375]
+   - conda-forge/noarch::archspec==0.2.5=pyhd8ed1ab_0[md5=845b38297fca2f2d18a29748e2ece7fa]
+   - conda-forge/noarch::boltons==24.0.0=pyhd8ed1ab_1[md5=d88c38e66d85ecc9c7e2c4110676bbf4]
+   - conda-forge/linux-64::brotli-python==1.1.0=py312h2ec8cdc_2[md5=b0b867af6fc74b2a0aa206da29c0f3cf]
+   - conda-forge/noarch::certifi==2025.1.31=pyhd8ed1ab_0[md5=c207fa5ac7ea99b149344385a9c0880d]
+   - conda-forge/noarch::charset-normalizer==3.4.1=pyhd8ed1ab_0[md5=e83a31202d1c0a000fce3e9cf3825875]
+   - conda-forge/noarch::colorama==0.4.6=pyhd8ed1ab_1[md5=962b9857ee8e7018c22f2776ffa0b2d7]
+   - conda-forge/noarch::distro==1.9.0=pyhd8ed1ab_1[md5=0a2014fd9860f8b1eaa0b1f3d3771a08]
+   - conda-forge/linux-64::frozendict==2.4.6=py312h66e93f0_0[md5=9fa8408745a0621314b7751d11fecc18]
+   - conda-forge/noarch::hpack==4.1.0=pyhd8ed1ab_0[md5=0a802cb9888dd14eeefc611f05c40b6e]
+   - conda-forge/noarch::hyperframe==6.1.0=pyhd8ed1ab_0[md5=8e6923fc12f1fe8f8c4e5c9f343256ac]
+   - conda-forge/noarch::idna==3.10=pyhd8ed1ab_1[md5=39a4f67be3286c86d696df570b1201b7]
+   - conda-forge/linux-64::jsonpointer==3.0.0=py312h7900ff3_1[md5=6b51f7459ea4073eeb5057207e2e1e3d]
+   - conda-forge/linux-64::libarchive==3.7.7=h4585015_3[md5=a28808eae584c7f519943719b2a2b386]
+   - conda-forge/noarch::packaging==24.2=pyhd8ed1ab_2[md5=3bfed7e6228ebf2f7b9eaa47f1b4e2aa]
+   - conda-forge/noarch::platformdirs==4.3.6=pyhd8ed1ab_1[md5=577852c7e53901ddccc7e6a9959ddebe]
+   - conda-forge/noarch::pluggy==1.5.0=pyhd8ed1ab_1[md5=e9dcbce5f45f9ee500e728ae58b605b6]
+   - conda-forge/linux-64::pycosat==0.6.6=py312h66e93f0_2[md5=08223e6a73e0bca5ade16ec4cebebf23]
+   - conda-forge/noarch::pycparser==2.22=pyh29332c3_1[md5=12c566707c80111f9799308d9e265aef]
+   - conda-forge/noarch::pysocks==1.7.1=pyha55dd90_7[md5=461219d1a5bd61342293efa2c0c90eac]
+   - conda-forge/linux-64::ruamel.yaml.clib==0.2.8=py312h66e93f0_1[md5=532c3e5d0280be4fea52396ec1fa7d5d]
+   - conda-forge/noarch::setuptools==75.8.2=pyhff2d567_0[md5=9bddfdbf4e061821a1a443f93223be61]
+   - conda-forge/noarch::truststore==0.10.1=pyh29332c3_0[md5=373a72aeffd8a5d93652ef1235062252]
+   - conda-forge/noarch::wheel==0.45.1=pyhd8ed1ab_1[md5=75cb7132eb58d97896e173ef12ac9986]
+   - conda-forge/linux-64::cffi==1.17.1=py312h06ac9bb_0[md5=a861504bbea4161a9170b85d4d2be840]
+   - conda-forge/noarch::h2==4.2.0=pyhd8ed1ab_0[md5=b4754fb1bdcb70c8fd54f918301582c6]
+   - conda-forge/noarch::jsonpatch==1.33=pyhd8ed1ab_1[md5=cb60ae9cf02b9fcb8004dec4089e5691]
+   - conda-forge/linux-64::libmamba==1.5.12=h49b8a8d_0[md5=d6aec145c4f2473c09c2699d74f6dfc0]
+   - conda-forge/noarch::pip==25.0.1=pyh8b19718_0[md5=79b5c1440aedc5010f687048d9103628]
+   - conda-forge/linux-64::ruamel.yaml==0.18.10=py312h66e93f0_0[md5=5260b7fb19694ee5bc4ed0ee7a2a769f]
+   - conda-forge/noarch::tqdm==4.67.1=pyhd8ed1ab_1[md5=9efbfdc37242619130ea42b1cc4ed861]
+   - conda-forge/linux-64::libmambapy==1.5.12=py312hbaee817_0[md5=88dd983e44c86cdde2817ecfa7d84d5a]
+   - conda-forge/linux-64::zstandard==0.23.0=py312hef9b889_1[md5=8b7069e9792ee4e5b4919a7a306d2e67]
+   - conda-forge/noarch::conda-package-streaming==0.11.0=pyhd8ed1ab_1[md5=027138b89fbe94c3870eee49bb2e1da6]
+   - conda-forge/noarch::urllib3==2.3.0=pyhd8ed1ab_0[md5=32674f8dbfb7b26410ed580dd3c10a29]
+   - conda-forge/noarch::requests==2.32.3=pyhd8ed1ab_1[md5=a9b9368f3701a417eac9edbcae7cb737]
+   - conda-forge/noarch::conda-package-handling==2.4.0=pyh7900ff3_2[md5=32c158f481b4fd7630c565030f7bc482]
+   - conda-forge/linux-64::conda==24.11.3=py312h7900ff3_0[md5=bdaca5d82db98d8b5639f058a818ff03]
+   - conda-forge/noarch::conda-libmamba-solver==24.9.0=pyhd8ed1ab_0[md5=45378d089c5f72c9c0d63d58414c645d]
+   - conda-forge/linux-64::mamba==1.5.12=py312h9460a1c_0[md5=59a9360536caad98732fdfdc320e41dc]
+
+
+  Package                         Version  Build               Channel         Size
+─────────────────────────────────────────────────────────────────────────────────────
+  Install:
+─────────────────────────────────────────────────────────────────────────────────────
+
+  [32m+ _libgcc_mutex          [0m           0.1  conda_forge         conda-forge         
+  [32m+ ca-certificates        [0m     2025.1.31  hbcca054_0          conda-forge         
+  [32m+ ld_impl_linux-64       [0m          2.43  h712a8e2_4          conda-forge         
+  [32m+ libgomp                [0m        14.2.0  h767d61c_2          conda-forge         
+  [32m+ pybind11-abi           [0m             4  hd8ed1ab_3          conda-forge         
+  [32m+ python_abi             [0m          3.12  5_cp312             conda-forge         
+  [32m+ tzdata                 [0m         2025a  h78e105d_0          conda-forge         
+  [32m+ _openmp_mutex          [0m           4.5  2_gnu               conda-forge         
+  [32m+ libgcc                 [0m        14.2.0  h767d61c_2          conda-forge         
+  [32m+ c-ares                 [0m        1.34.4  hb9d3cd8_0          conda-forge         
+  [32m+ libexpat               [0m         2.6.4  h5888daf_0          conda-forge         
+  [32m+ libffi                 [0m         3.4.6  h2dba641_0          conda-forge         
+  [32m+ libgcc-ng              [0m        14.2.0  h69a702a_2          conda-forge         
+  [32m+ libiconv               [0m          1.18  h4ce23a2_1          conda-forge         
+  [32m+ liblzma                [0m         5.6.4  hb9d3cd8_0          conda-forge         
+  [32m+ libstdcxx              [0m        14.2.0  h8f9b012_2          conda-forge         
+  [32m+ libzlib                [0m         1.3.1  hb9d3cd8_2          conda-forge         
+  [32m+ ncurses                [0m           6.5  h2d0b736_3          conda-forge         
+  [32m+ openssl                [0m         3.4.1  h7b32b05_0          conda-forge         
+  [32m+ reproc                 [0m  14.2.5.post0  hb9d3cd8_0          conda-forge         
+  [32m+ bzip2                  [0m         1.0.8  h4bc722e_7          conda-forge         
+  [32m+ keyutils               [0m         1.6.1  h166bdaf_0          conda-forge         
+  [32m+ libedit                [0m  3.1.20250104  pl5321h7949ede_0    conda-forge         
+  [32m+ libev                  [0m          4.33  hd590300_2          conda-forge         
+  [32m+ libnsl                 [0m         2.0.1  hd590300_0          conda-forge         
+  [32m+ libsqlite              [0m        3.49.1  hee588c1_1          conda-forge         
+  [32m+ libssh2                [0m        1.11.1  hf672d98_0          conda-forge         
+  [32m+ libstdcxx-ng           [0m        14.2.0  h4852527_2          conda-forge         
+  [32m+ libuuid                [0m        2.38.1  h0b41bf4_0          conda-forge         
+  [32m+ libxcrypt              [0m        4.4.36  hd590300_1          conda-forge         
+  [32m+ lz4-c                  [0m        1.10.0  h5888daf_1          conda-forge         
+  [32m+ lzo                    [0m          2.10  hd590300_1001       conda-forge         
+  [32m+ readline               [0m           8.2  h8c095d6_2          conda-forge         
+  [32m+ reproc-cpp             [0m  14.2.5.post0  h5888daf_0          conda-forge         
+  [32m+ tk                     [0m        8.6.13  noxft_h4845f30_101  conda-forge         
+  [32m+ fmt                    [0m        11.0.2  h434a139_0          conda-forge         
+  [32m+ icu                    [0m          75.1  he02047a_0          conda-forge         
+  [32m+ krb5                   [0m        1.21.3  h659f571_0          conda-forge         
+  [32m+ libnghttp2             [0m        1.64.0  h161d5f1_0          conda-forge         
+  [32m+ libsolv                [0m        0.7.30  h3509ff9_0          conda-forge         
+  [32m+ python                 [0m        3.12.9  h9e4cc4f_1_cpython  conda-forge         
+  [32m+ yaml-cpp               [0m         0.8.0  h59595ed_0          conda-forge         
+  [32m+ zstd                   [0m         1.5.6  ha6fb4c9_0          conda-forge         
+  [32m+ libcurl                [0m        8.12.1  h332b0f4_0          conda-forge         
+  [32m+ libxml2                [0m        2.13.6  h8d12d68_0          conda-forge         
+  [32m+ menuinst               [0m         2.2.0  py312h7900ff3_0     conda-forge         
+  [32m+ archspec               [0m         0.2.5  pyhd8ed1ab_0        conda-forge         
+  [32m+ boltons                [0m        24.0.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ brotli-python          [0m         1.1.0  py312h2ec8cdc_2     conda-forge         
+  [32m+ certifi                [0m     2025.1.31  pyhd8ed1ab_0        conda-forge         
+  [32m+ charset-normalizer     [0m         3.4.1  pyhd8ed1ab_0        conda-forge         
+  [32m+ colorama               [0m         0.4.6  pyhd8ed1ab_1        conda-forge         
+  [32m+ distro                 [0m         1.9.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ frozendict             [0m         2.4.6  py312h66e93f0_0     conda-forge         
+  [32m+ hpack                  [0m         4.1.0  pyhd8ed1ab_0        conda-forge         
+  [32m+ hyperframe             [0m         6.1.0  pyhd8ed1ab_0        conda-forge         
+  [32m+ idna                   [0m          3.10  pyhd8ed1ab_1        conda-forge         
+  [32m+ jsonpointer            [0m         3.0.0  py312h7900ff3_1     conda-forge         
+  [32m+ libarchive             [0m         3.7.7  h4585015_3          conda-forge         
+  [32m+ packaging              [0m          24.2  pyhd8ed1ab_2        conda-forge         
+  [32m+ platformdirs           [0m         4.3.6  pyhd8ed1ab_1        conda-forge         
+  [32m+ pluggy                 [0m         1.5.0  pyhd8ed1ab_1        conda-forge         
+  [32m+ pycosat                [0m         0.6.6  py312h66e93f0_2     conda-forge         
+  [32m+ pycparser              [0m          2.22  pyh29332c3_1        conda-forge         
+  [32m+ pysocks                [0m         1.7.1  pyha55dd90_7        conda-forge         
+  [32m+ ruamel.yaml.cliScript started on 2025-03-13 18:39:59+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="133" LINES="33"]
+[?2004h]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ [7mwget -O Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(unam[27m[7me[27m[7m)-$(uname -m).sh"[27m[A]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ wget -O Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+[?2004l--2025-03-13 18:40:07--  https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+Resolving github.com (github.com)... 20.207.73.82
+Connecting to github.com (github.com)|20.207.73.82|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-Linux-x86_64.sh [following]
+--2025-03-13 18:40:07--  https://github.com/conda-forge/miniforge/releases/download/24.11.3-2/Miniforge3-Linux-x86_64.sh
+Reusing existing connection to github.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/221584272/0702c0b7-4728-4bb5-b8e8-8b7f59a0bfbc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250313T184007Z&X-Amz-Expires=300&X-Amz-Signature=cb2555cb36327dd2d931f6f9deaecb4b46409631fd4374dbcd21f609ed8ecf85&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMiniforge3-Linux-x86_64.sh&response-content-type=application%2Foctet-stream [following]
+--2025-03-13 18:40:08--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/221584272/0702c0b7-4728-4bb5-b8e8-8b7f59a0bfbc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250313%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250313T184007Z&X-Amz-Expires=300&X-Amz-Signature=cb2555cb36327dd2d931f6f9deaecb4b46409631fd4374dbcd21f609ed8ecf85&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3DMiniforge3-Linux-x86_64.sh&response-content-type=application%2Foctet-stream
+Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 90308175 (86M) [application/octet-stream]
+Saving to: ‘Miniforge3.sh’
+
+Miniforge3.sh                       0%[                                                           ]       0  --.-KB/s               Miniforge3.sh                       3%[=>                                                         ]   3.40M  16.6MB/s               Miniforge3.sh                       8%[===>                                                       ]   7.28M  17.9MB/s               Miniforge3.sh                      11%[=====>                                                     ]  10.02M  16.1MB/s               Miniforge3.sh                      17%[=========>                                                 ]  15.01M  18.3MB/s               Miniforge3.sh                      22%[============>                                              ]  19.47M  19.0MB/s               Miniforge3.sh                      26%[==============>                                            ]  22.46M  18.3MB/s               Miniforge3.sh                      32%[=================>                                         ]  27.61M  19.4MB/s               Miniforge3.sh                      34%[===================>                                       ]  30.01M  18.2MB/s               Miniforge3.sh                      40%[======================>                                    ]  35.01M  19.0MB/s               Miniforge3.sh                      46%[==========================>                                ]  39.76M  19.4MB/s               Miniforge3.sh                      49%[===========================>                               ]  42.25M  18.8MB/s               Miniforge3.sh                      54%[===============================>                           ]  46.76M  19.1MB/s               Miniforge3.sh                      58%[=================================>                         ]  50.02M  18.6MB/s               Miniforge3.sh                      62%[===================================>                       ]  53.57M  18.5MB/s               Miniforge3.sh                      67%[======================================>                    ]  57.85M  18.7MB/s    eta 2s     Miniforge3.sh                      70%[========================================>                  ]  60.76M  18.4MB/s    eta 2s     Miniforge3.sh                      74%[===========================================>               ]  64.58M  18.7MB/s    eta 2s     Miniforge3.sh                      80%[==============================================>            ]  69.13M  18.9MB/s    eta 2s     Miniforge3.sh                      83%[================================================>          ]  71.82M  18.9MB/s    eta 2s     Miniforge3.sh                      88%[===================================================>       ]  76.42M  18.8MB/s    eta 1s     Miniforge3.sh                      92%[=====================================================>     ]  79.90M  18.5MB/s    eta 1s     Miniforge3.sh                      95%[=======================================================>   ]  82.12M  18.4MB/s    eta 1s     Miniforge3.sh                     100%[==========================================================>]  86.12M  18.3MB/s    in 4.7s    
+
+2025-03-13 18:40:14 (18.4 MB/s) - ‘Miniforge3.sh’ saved [90308175/90308175]
+
+[?2004h]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ [7mbash Miniforge3.sh -b -p "${HOME}/conda"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbash Miniforge3.sh -b -p "${HOME}/conda"
+[?2004lERROR: File or directory already exists: '/home/mohiddinkhan/conda'
+If you want to update an existing installation, use the -u option.
+[?2004h]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ [7msource "${HOME}/conda/etc/profile.d/conda.sh"[27m
+[7msource "${HOME}/conda/etc/profile.d/mamba.sh"[27m
+[7mconda init[27m[A[A]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ source "${HOME}/conda/etc/profile.d/conda.sh"
+source "${HOME}/conda/etc/profile.d/mamba.sh"
+conda init
+[?2004lno change     /home/mohiddinkhan/conda/condabin/conda
+no change     /home/mohiddinkhan/conda/bin/conda
+no change     /home/mohiddinkhan/conda/bin/conda-env
+no change     /home/mohiddinkhan/conda/bin/activate
+no change     /home/mohiddinkhan/conda/bin/deactivate
+no change     /home/mohiddinkhan/conda/etc/profile.d/conda.sh
+no change     /home/mohiddinkhan/conda/etc/fish/conf.d/conda.fish
+no change     /home/mohiddinkhan/conda/shell/condabin/Conda.psm1
+no change     /home/mohiddinkhan/conda/shell/condabin/conda-hook.ps1
+no change     /home/mohiddinkhan/conda/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /home/mohiddinkhan/conda/etc/profile.d/conda.csh
+modified      /home/mohiddinkhan/.bashrc
+
+==> For changes to take effect, close and re-open your current shell. <==
+
+[?2004h]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ [7mconda create --name myenv[27mconda create --name myenv
+[?2004lChannels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Solving environment: | done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/mohiddinkhan/conda/envs/myenv
+
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: - done
+Verifying transaction: | / done
+Executing transaction: \ done
+#
+# To activate this environment, use
+#
+#     $ conda activate myenv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ conda activate myenv
+[?2004l[?2004h(myenv) ]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ conda install numpyu[K
+[?2004lChannels:
+ - conda-forge
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - done
+Solving environment: | / done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.11.3
+    latest version: 25.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/mohiddinkhan/conda/envs/myenv
+
+  added / updated specs:
+    - numpy
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    libblas-3.9.0              |31_h59b9bed_openblas          16 KB  conda-forge
+    libcblas-3.9.0             |31_he106b2a_openblas          16 KB  conda-forge
+    libgfortran-14.2.0         |       h69a702a_2          52 KB  conda-forge
+    libgfortran5-14.2.0        |       hf1ad2bd_2         1.4 MB  conda-forge
+    liblapack-3.9.0            |31_h7ac8fdf_openblas          16 KB  conda-forge
+    libmpdec-4.0.0             |       h4bc722e_0          88 KB  conda-forge
+    libopenblas-0.3.29         |pthreads_h94d23a6_0         5.6 MB  conda-forge
+    numpy-2.2.3                |  py313h17eae1a_0         8.1 MB  conda-forge
+    pip-25.0.1                 |     pyh145f28c_0         1.2 MB  conda-forge
+    python-3.13.2              |hf636f53_101_cp313        31.7 MB  conda-forge
+    python_abi-3.13            |          5_cp313           6 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:        48.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge 
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-2_gnu 
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-h4bc722e_7 
+  ca-certificates    conda-forge/linux-64::ca-certificates-2025.1.31-hbcca054_0 
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.43-h712a8e2_4 
+  libblas            conda-forge/linux-64::libblas-3.9.0-31_h59b9bed_openblas 
+  libcblas           conda-forge/linux-64::libcblas-3.9.0-31_he106b2a_openblas 
+  libexpat           conda-forge/linux-64::libexpat-2.6.4-h5888daf_0 
+  libffi             conda-forge/linux-64::libffi-3.4.6-h2dba641_0 
+  libgcc             conda-forge/linux-64::libgcc-14.2.0-h767d61c_2 
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-14.2.0-h69a702a_2 
+  libgfortran        conda-forge/linux-64::libgfortran-14.2.0-h69a702a_2 
+  libgfortran5       conda-forge/linux-64::libgfortran5-14.2.0-hf1ad2bd_2 
+  libgomp            conda-forge/linux-64::libgomp-14.2.0-h767d61c_2 
+  liblapack          conda-forge/linux-64::liblapack-3.9.0-31_h7ac8fdf_openblas 
+  liblzma            conda-forge/linux-64::liblzma-5.6.4-hb9d3cd8_0 
+  libmpdec           conda-forge/linux-64::libmpdec-4.0.0-h4bc722e_0 
+  libopenblas        conda-forge/linux-64::libopenblas-0.3.29-pthreads_h94d23a6_0 
+  libsqlite          conda-forge/linux-64::libsqlite-3.49.1-hee588c1_1 
+  libstdcxx          conda-forge/linux-64::libstdcxx-14.2.0-h8f9b012_2 
+  libuuid            conda-forge/linux-64::libuuid-2.38.1-h0b41bf4_0 
+  libzlib            conda-forge/linux-64::libzlib-1.3.1-hb9d3cd8_2 
+  ncurses            conda-forge/linux-64::ncurses-6.5-h2d0b736_3 
+  numpy              conda-forge/linux-64::numpy-2.2.3-py313h17eae1a_0 
+  openssl            conda-forge/linux-64::openssl-3.4.1-h7b32b05_0 
+  pip                conda-forge/noarch::pip-25.0.1-pyh145f28c_0 
+  python             conda-forge/linux-64::python-3.13.2-hf636f53_101_cp313 
+  python_abi         conda-forge/linux-64::python_abi-3.13-5_cp313 
+  readline           conda-forge/linux-64::readline-8.2-h8c095d6_2 
+  tk                 conda-forge/linux-64::tk-8.6.13-noxft_h4845f30_101 
+  tzdata             conda-forge/noarch::tzdata-2025a-h78e105d_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+python-3.13.2        | 31.7 MB   |                                                                                            |   0% 
+numpy-2.2.3          | 8.1 MB    |                                                                                            |   0% [A
+
+libopenblas-0.3.29   | 5.6 MB    |                                                                                            |   0% [A[A
+
+
+libgfortran5-14.2.0  | 1.4 MB    |                                                                                            |   0% [A[A[A
+
+
+
+pip-25.0.1           | 1.2 MB    |                                                                                            |   0% [A[A[A[A
+
+
+
+
+libmpdec-4.0.0       | 88 KB     |                                                                                            |   0% [A[A[A[A[A
+
+
+
+
+
+libgfortran-14.2.0   | 52 KB     |                                                                                            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     |                                                                                            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     |                                                                                            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     |                                                                                            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+python_abi-3.13      | 6 KB      |                                                                                            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+libgfortran5-14.2.0  | 1.4 MB    | #                                                                                          |   1% [A[A[A
+
+
+
+pip-25.0.1           | 1.2 MB    | #1                                                                                         |   1% [A[A[A[Apython-3.13.2        | 31.7 MB   |                                                                                            |   0% 
+
+libopenblas-0.3.29   | 5.6 MB    | 2                                                                                          |   0% [A[A
+numpy-2.2.3          | 8.1 MB    | 1                                                                                          |   0% [A
+
+
+
+pip-25.0.1           | 1.2 MB    | ###########7                                                                               |  13% [A[A[A[A
+
+
+libgfortran5-14.2.0  | 1.4 MB    | #######                                                                                    |   8% [A[A[Apython-3.13.2        | 31.7 MB   | 3                                                                                          |   0% 
+
+libopenblas-0.3.29   | 5.6 MB    | #7                                                                                         |   2% [A[A
+numpy-2.2.3          | 8.1 MB    | #2                                                                                         |   1% [A
+
+
+
+pip-25.0.1           | 1.2 MB    | #####################################5                                                     |  42% [A[A[A[A
+
+
+libgfortran5-14.2.0  | 1.4 MB    | ######################################3                                                    |  43% [A[A[A
+
+
+
+pip-25.0.1           | 1.2 MB    | ########################################################################################## | 100% [A[A[A[Apython-3.13.2        | 31.7 MB   | #5                                                                                         |   2% 
+
+
+
+pip-25.0.1           | 1.2 MB    | ########################################################################################## | 100% [A[A[A[A
+numpy-2.2.3          | 8.1 MB    | ##7                                                                                        |   3% [A
+
+
+libgfortran5-14.2.0  | 1.4 MB    | ##########################################################################6                |  83% [A[A[A
+
+libopenblas-0.3.29   | 5.6 MB    | ###7                                                                                       |   4% [A[A
+
+
+libgfortran5-14.2.0  | 1.4 MB    | ########################################################################################## | 100% [A[A[Apython-3.13.2        | 31.7 MB   | ###2                                                                                       |   4% 
+numpy-2.2.3          | 8.1 MB    | #######1                                                                                   |   8% [A
+
+
+
+
+
+libgfortran-14.2.0   | 52 KB     | ###########################4                                                               |  30% [A[A[A[A[A[A
+
+libopenblas-0.3.29   | 5.6 MB    | ##########9                                                                                |  12% [A[A
+
+
+
+
+
+libgfortran-14.2.0   | 52 KB     | ########################################################################################## | 100% [A[A[A[A[A[A
+
+
+libgfortran5-14.2.0  | 1.4 MB    | ########################################################################################## | 100% [A[A[A
+
+
+
+
+libmpdec-4.0.0       | 88 KB     | ################3                                                                          |  18% [A[A[A[A[Apython-3.13.2        | 31.7 MB   | #####5                                                                                     |   6% 
+
+
+
+
+libmpdec-4.0.0       | 88 KB     | ########################################################################################## | 100% [A[A[A[A[A
+
+
+
+
+
+libgfortran-14.2.0   | 52 KB     | ########################################################################################## | 100% [A[A[A[A[A[A
+
+
+
+
+
+libgfortran-14.2.0   | 52 KB     | ########################################################################################## | 100% [A[A[A[A[A[A
+
+
+
+
+libmpdec-4.0.0       | 88 KB     | ########################################################################################## | 100% [A[A[A[A[A
+numpy-2.2.3          | 8.1 MB    | #############9                                                                             |  15% [A
+
+
+
+pip-25.0.1           | 1.2 MB    | ########################################################################################## | 100% [A[A[A[Apython-3.13.2        | 31.7 MB   | ######9                                                                                    |   8% 
+
+libopenblas-0.3.29   | 5.6 MB    | ################6                                                                          |  19% [A[A
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     | #######################################################################################4   |  97% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     | ########################################################################################## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libblas-3.9.0        | 16 KB     | ########################################################################################## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     | #######################################################################################7   |  98% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     | ########################################################################################## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+libcblas-3.9.0       | 16 KB     | ########################################################################################## | 100% [A[A[A[A[A[A[A[A
+numpy-2.2.3          | 8.1 MB    | #####################7                                                                     |  24% [Apython-3.13.2        | 31.7 MB   | #########8                                                                                 |  11% 
+numpy-2.2.3          | 8.1 MB    | ############################5                                                              |  32% [A
+
+libopenblas-0.3.29   | 5.6 MB    | #########################6                                                                 |  29% [A[Apython-3.13.2        | 31.7 MB   | ###########6                                                                               |  13% 
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     | #######################################################################################8   |  98% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     | ########################################################################################## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+liblapack-3.9.0      | 16 KB     | ########################################################################################## | 100% [A[A[A[A[A[A[A[A[A
+numpy-2.2.3          | 8.1 MB    | #####################################                                                      |  41% [A
+
+
+
+
+
+
+
+
+
+python_abi-3.13      | 6 KB      | ########################################################################################## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+python_abi-3.13      | 6 KB      | ########################################################################################## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+python_abi-3.13      | 6 KB      | ########################################################################################## | 100% [A[A[A[A[A[A[A[A[A[Apython-3.13.2        | 31.7 MB   | ##############5                                                                            |  16% 
+numpy-2.2.3          | 8.1 MB    | ###########################################1                                               |  48% [Apython-3.13.2        | 31.7 MB   | ################7                                                                          |  19% 
+
+libopenblas-0.3.29   | 5.6 MB    | ###################################1                                                       |  39% [A[A
+numpy-2.2.3          | 8.1 MB    | ###################################################3                                       |  57% [Apython-3.13.2        | 31.7 MB   | ###################                                                                        |  21% 
+
+libopenblas-0.3.29   | 5.6 MB    | #########################################8                                                 |  47% [A[Apython-3.13.2        | 31.7 MB   | #####################                                                                      |  23% 
+numpy-2.2.3          | 8.1 MB    | #########################################################7                                 |  64% [A
+
+libopenblas-0.3.29   | 5.6 MB    | ##############################################5                                            |  52% [A[Apython-3.13.2        | 31.7 MB   | ########################2                                                                  |  27% 
+numpy-2.2.3          | 8.1 MB    | ###################################################################3                       |  75% [A
+
+libopenblas-0.3.29   | 5.6 MB    | ############################################################2                              |  67% [A[A
+numpy-2.2.3          | 8.1 MB    | #############################################################################2             |  86% [Apython-3.13.2        | 31.7 MB   | ##########################4                                                                |  29% 
+
+libopenblas-0.3.29   | 5.6 MB    | ##########################################################################7                |  83% [A[A
+numpy-2.2.3          | 8.1 MB    | ####################################################################################6      |  94% [A
+numpy-2.2.3          | 8.1 MB    | ########################################################################################## | 100% [Apython-3.13.2        | 31.7 MB   | ############################3                                                              |  32% 
+
+libopenblas-0.3.29   | 5.6 MB    | ###################################################################################2       |  92% [A[Apython-3.13.2        | 31.7 MB   | ###################################8                                                       |  40% 
+
+libopenblas-0.3.29   | 5.6 MB    | ########################################################################################## | 100% [A[Apython-3.13.2        | 31.7 MB   | #######################################                                                    |  43% python-3.13.2        | 31.7 MB   | ##########################################5                                                |  47% 
+
+libopenblas-0.3.29   | 5.6 MB    | ########################################################################################## | 100% [A[A
+numpy-2.2.3          | 8.1 MB    | ########################################################################################## | 100% [Apython-3.13.2        | 31.7 MB   | ##############################################1                                            |  51% python-3.13.2        | 31.7 MB   | #################################################6                                         |  55% python-3.13.2        | 31.7 MB   | #####################################################5                                     |  59% python-3.13.2        | 31.7 MB   | #########################################################                                  |  63% python-3.13.2        | 31.7 MB   | ############################################################5                              |  67% python-3.13.2        | 31.7 MB   | ################################################################9                          |  72% python-3.13.2        | 31.7 MB   | ####################################################################9                      |  77% python-3.13.2        | 31.7 MB   | #########################################################################1                 |  81% python-3.13.2        | 31.7 MB   | #############################################################################              |  86% python-3.13.2        | 31.7 MB   | #################################################################################3         |  90% python-3.13.2        | 31.7 MB   | #####################################################################################4     |  95% python-3.13.2        | 31.7 MB   | #########################################################################################8 | 100% python-3.13.2        | 31.7 MB   | ########################################################################################## | 100% python-3.13.2        | 31.7 MB   | ########################################################################################## | 100%                                                                                                                                      
+                                                                                                                                     [A
+
+                                                                                                                                     [A[A
+
+
+                                                                                                                                     [A[A[A
+
+
+
+                                                                                                                                     [A[A[A[A
+
+
+
+
+                                                                                                                                     [A[A[A[A[A
+
+
+
+
+
+                                                                                                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                                                                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                                                                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                                                                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                                                                                                     [A[A[A[A[A[A[A[A[A[A
+Preparing transaction: - \ done
+Verifying transaction: / - \ | / - \ | / - \ | / done
+Executing transaction: \ | / - \ | / - \ | / - \ | / - \ done
+[?2004h(myenv) ]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ conda list
+[?2004l# packages in environment at /home/mohiddinkhan/conda/envs/myenv:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                       2_gnu    conda-forge
+bzip2                     1.0.8                h4bc722e_7    conda-forge
+ca-certificates           2025.1.31            hbcca054_0    conda-forge
+ld_impl_linux-64          2.43                 h712a8e2_4    conda-forge
+libblas                   3.9.0           31_h59b9bed_openblas    conda-forge
+libcblas                  3.9.0           31_he106b2a_openblas    conda-forge
+libexpat                  2.6.4                h5888daf_0    conda-forge
+libffi                    3.4.6                h2dba641_0    conda-forge
+libgcc                    14.2.0               h767d61c_2    conda-forge
+libgcc-ng                 14.2.0               h69a702a_2    conda-forge
+libgfortran               14.2.0               h69a702a_2    conda-forge
+libgfortran5              14.2.0               hf1ad2bd_2    conda-forge
+libgomp                   14.2.0               h767d61c_2    conda-forge
+liblapack                 3.9.0           31_h7ac8fdf_openblas    conda-forge
+liblzma                   5.6.4                hb9d3cd8_0    conda-forge
+libmpdec                  4.0.0                h4bc722e_0    conda-forge
+libopenblas               0.3.29          pthreads_h94d23a6_0    conda-forge
+libsqlite                 3.49.1               hee588c1_1    conda-forge
+libstdcxx                 14.2.0               h8f9b012_2    conda-forge
+libuuid                   2.38.1               h0b41bf4_0    conda-forge
+libzlib                   1.3.1                hb9d3cd8_2    conda-forge
+ncurses                   6.5                  h2d0b736_3    conda-forge
+numpy                     2.2.3           py313h17eae1a_0    conda-forge
+openssl                   3.4.1                h7b32b05_0    conda-forge
+pip                       25.0.1             pyh145f28c_0    conda-forge
+python                    3.13.2          hf636f53_101_cp313    conda-forge
+python_abi                3.13                    5_cp313    conda-forge
+readline                  8.2                  h8c095d6_2    conda-forge
+tk                        8.6.13          noxft_h4845f30_101    conda-forge
+tzdata                    2025a                h78e105d_0    conda-forge
+[?2004h(myenv) ]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ conda deacr[Ktivate
+[?2004l[?2004h]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ conda remove --name myenv --all
+[?2004l
+Remove all packages in environment /home/mohiddinkhan/conda/envs/myenv:
+
+
+## Package Plan ##
+
+  environment location: /home/mohiddinkhan/conda/envs/myenv
+
+
+The following packages will be REMOVED:
+
+  _libgcc_mutex-0.1-conda_forge
+  _openmp_mutex-4.5-2_gnu
+  bzip2-1.0.8-h4bc722e_7
+  ca-certificates-2025.1.31-hbcca054_0
+  ld_impl_linux-64-2.43-h712a8e2_4
+  libblas-3.9.0-31_h59b9bed_openblas
+  libcblas-3.9.0-31_he106b2a_openblas
+  libexpat-2.6.4-h5888daf_0
+  libffi-3.4.6-h2dba641_0
+  libgcc-14.2.0-h767d61c_2
+  libgcc-ng-14.2.0-h69a702a_2
+  libgfortran-14.2.0-h69a702a_2
+  libgfortran5-14.2.0-hf1ad2bd_2
+  libgomp-14.2.0-h767d61c_2
+  liblapack-3.9.0-31_h7ac8fdf_openblas
+  liblzma-5.6.4-hb9d3cd8_0
+  libmpdec-4.0.0-h4bc722e_0
+  libopenblas-0.3.29-pthreads_h94d23a6_0
+  libsqlite-3.49.1-hee588c1_1
+  libstdcxx-14.2.0-h8f9b012_2
+  libuuid-2.38.1-h0b41bf4_0
+  libzlib-1.3.1-hb9d3cd8_2
+  ncurses-6.5-h2d0b736_3
+  numpy-2.2.3-py313h17eae1a_0
+  openssl-3.4.1-h7b32b05_0
+  pip-25.0.1-pyh145f28c_0
+  python-3.13.2-hf636f53_101_cp313
+  python_abi-3.13-5_cp313
+  readline-8.2-h8c095d6_2
+  tk-8.6.13-noxft_h4845f30_101
+  tzdata-2025a-h78e105d_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: - done
+Verifying transaction: | / done
+Executing transaction: \ | done
+Everything found within the environment (/home/mohiddinkhan/conda/envs/myenv), including any conda environment configurations and any non-conda files, will be deleted. Do you wish to continue?
+ (y/[n])? y
+
+[?2004h]0;mohiddinkhan@TIGER01167: ~[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2025-03-13 18:43:30+00:00 [COMMAND_EXIT_CODE="0"]
