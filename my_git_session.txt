@@ -1,0 +1,37 @@
+Script started on 2025-03-13 07:06:21+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="133" LINES="33"]
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ e[Kexit
+[?2004lexit
+
+Script done on 2025-03-13 07:06:34+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-03-13 07:07:21+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="133" LINES="33"]
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ cd git-tutorial
+[?2004lbash: cd: git-tutorial: No such file or directory
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ cd git-practice
+[?2004lbash: cd: git-practice: No such file or directory
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ cd git-practice
+[?2004lbash: cd: git-practice: No such file or directory
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ touch example.txt
+[?2004l[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ echo "Hello, Git!" > example.txt
+[?2004l[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ git add example.txt
+[?2004l[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ git commit -m "a[KAdd example.x[Ktxt"
+[?2004l[main 2109674] Add example.txt
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ git branch new-features[K
+[?2004lfatal: a branch named 'new-feature' already exists
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ git checkout new-feature
+[?2004lSwitched to branch 'new-feature'
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ echo"[K[Ko "New feature" >> example.txt
+[?2004l[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ git commit -am "Add new feature"
+[?2004l[new-feature c3c9228] Add new feature
+ 1 file changed, 1 insertion(+)
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ git checkout main
+[?2004lSwitched to branch 'main'
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ git merge new-feature
+[?2004lAuto-merging example.txt
+CONFLICT (content): Merge conflict in example.txt
+Automatic merge failed; fix conflicts and then commit the result.
+[?2004h]0;mohiddinkhan@TIGER01167: ~/git-practice[01;32mmohiddinkhan@TIGER01167[00m:[01;34m~/git-practice[00m$ exit
+[?2004lexit
+
+Script done on 2025-03-13 07:10:55+00:00 [COMMAND_EXIT_CODE="1"]
