@@ -1,3 +1,4 @@
 Hello, Git!
 New feature
 New feature
+New feature
